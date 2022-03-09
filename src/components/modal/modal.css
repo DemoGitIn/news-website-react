@@ -1,0 +1,77 @@
+.modal {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+}
+
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 1.4;
+  background: #fff;
+  border-radius: 3px;
+  width: 55vw;
+  height: 100vh;
+  padding: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.success-message {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.success-message__icon {
+  color: var(--success-color);
+  font-size: 4rem;
+  padding-right: 5%;
+}
+
+.success-message__arrow-icon {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  position: absolute;
+  padding: 1%;
+}
+
+.success-message__arrow-icon p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.success-message__arrow-icon a {
+  color: rgb(22, 26, 29);
+  font-size: 2rem;
+  margin: 0;
+}
+
+.success-message__arrow-icon a:hover {
+  color: var(--gray-light);
+}
+
+/* ---------------------------------- MEDIA QUERIES ---------------------------------- */
+
+@media (min-width: 0px) and (max-width: 500px) {
+  .success-message__icon {
+    font-size: 2.5rem;
+  }
+
+  .success-message__arrow-icon a {
+    font-size: 1.2rem;
+  }
+
+  .modal-content {
+    width: 100%;
+  }
+}

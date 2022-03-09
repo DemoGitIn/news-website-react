@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Open Sans", "sans-serif";
+  width: 100%;
+}
+
+.container form {
+  width: 100%;
+  max-width: 450px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgb(0, 0, 0, 0.3);
+  padding: 30px 40px;
+  font-size: 1rem;
+}
+
+.subscribe {
+  cursor: pointer;
+  background-color: rgb(0, 128, 128);
+  border: 2px solid rgb(0, 128, 128);
+  color: #fff;
+  display: block;
+  font-size: 16px;
+  padding: 10px;
+  margin-top: 8%;
+  border-radius: 3px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.subscribe:hover {
+  opacity: 50%;
+}
+
+.subscribe:active {
+  opacity: 100%;
+}
+
+.form-control {
+  width: 100%;
+}
+
+.select {
+  padding: 3% 1%;
+  font-size: 0.9rem;
+}
+label {
+  color: #777;
+}
+
+select {
+  border: 2px solid #f0f0f0;
+  border-radius: 4px;
+}
+
+/* ---------------------------------- MEDIA QUERIES ---------------------------------- */
+
+@media (min-width: 0px) and (max-width: 500px) {
+  .container form {
+    max-width: 350px;
+  }
+}

@@ -1,0 +1,37 @@
+.footer {
+  display: flex;
+  background: black;
+  color: white;
+  height: 10%;
+  width: 100vw;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 3%;
+}
+
+.footer button {
+  cursor: pointer;
+  background-color: var(--gray-dark);
+  border: 2px solid var(--gray-dark);
+  color: #fff;
+  padding: 3%;
+  border-radius: 3px;
+  font-size: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+}
+
+.footer button:hover {
+  background-color: rgb(97, 93, 93);
+  color: white;
+}
+
+/* ---------------------------------- MEDIA QUERIES ---------------------------------- */
+@media (min-width: 0px) and (max-width: 1000px) {
+  .footer {
+    justify-content: center;
+  }
+}
